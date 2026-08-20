@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from 'astro:transitions';
 const { title = 'Aaron Hernandez — Full Stack Developer' } = Astro.props;
 ---
-<!doctype html><html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Portafolio de Aaron Hernandez Cabrera, Full Stack Developer especializado en productos SaaS." /><meta name="theme-color" content="#28351d" /><title>{title}</title></head><body><slot /></body></html>
+<!doctype html><html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Portafolio de Aaron Hernandez Cabrera, Full Stack Developer especializado en productos SaaS." /><meta name="theme-color" content="#28351d" /><title>{title}</title></head><body><ClientRouter /><slot /></body></html>
